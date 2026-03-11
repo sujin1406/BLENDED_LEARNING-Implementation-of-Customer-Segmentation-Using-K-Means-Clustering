@@ -45,8 +45,7 @@ import warnings
 warnings.filterwarnings("ignore", message="KMeans is known to have a memory leak on Windows with MKL")
 
 # Step 1: Load the dataset
-url = "https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-ML0187EN-SkillsNetwork/labs/module%203/data/CustomerData.csv"
-data = pd.read_csv(url)
+data = pd.read_csv("CustomerData.csv")
 
 # Step 2: Explore the data
 print(data.head())
